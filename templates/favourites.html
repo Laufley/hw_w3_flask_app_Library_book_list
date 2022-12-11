@@ -2,6 +2,7 @@
 {% block content %}
     <div>
         <h2>Your favourites</h2>
+        <div class="text">
             <ol>
                 {% for book in book_shelves %}
                 <li>{{book.title}} {{book.author}} {{book.genre}}</li>

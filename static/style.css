@@ -95,4 +95,14 @@ body > header > a {
     'footer footer'; 
 }
 
+#img{
+    margin-left: 50px;
+}
 
+#link{
+    margin-left: 50px;
+}
+
+.text {
+    font-family: monospace;
+}
