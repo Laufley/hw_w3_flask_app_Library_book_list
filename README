@@ -17,10 +17,21 @@ PERSONAL ADDITIONS
 7. Added several HTML templates for unique pages, extending content from base.html using blocks.
 7. Navigate the <Nav> elements from the <Nav> menu with simple tabulations.
 8. Clicking on any <Nav> element will close the current page and open a new one (vs on tabs, to not overpopulate the browser).
-4. Unique <Nav> pages:
-   4.1 - Favourites: User can click a button from homepage and save the book into a list on Favourites page.
-   4.2 - Sticker_notes : User can write personal comments about any book read in case user wants to remember the emotions or thoughts related.
+4. <Nav> pages:
+   4.1 - Favourites: User can click a button from homepage and save the book into a list on Favourites page. 
+   Deleting a book from favourites WONT delete it from your favourite list.
+   Future implementation can add button to remove book from favourites too.
+   4.2 - Your thoughts : User can write personal comments about any book read in case user wants to remember the emotions or thoughts related.
    4.3 - Book News! : Feeds the user with valuable information regarding books, the community or the page.
    4.4 - What the duck community says: where (fake)_users can gather and post comments to interact.
 
+
+IMPROVEMENTS:
+- Problem making the footer sticking to the bottom.
+
+FUTURE ADDITIONS:
+- Favourites: add button to remove book from favourites too.
+- Your thoughts: only had time to create the text area feature. Didn't have time to actually save the inputs from the user in a list. Future implementation to do that.
+-Book news: want to show a preview of the video instead of a picture. Didn't have time to do proper research.
+- What the duck community says: Didn;t have time to create a fake community with CSS.
 
