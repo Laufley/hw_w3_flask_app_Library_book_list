@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div>
+        <h2>Your favourites</h2>
+            <ol>
+                {% for book in book_shelves %}
+                <li>{{book.title}} {{book.author}} {{book.genre}}</li>
+                {% endfor%}
+            </ol>              
+        </div>
+
+    </div>
+{% endblock %}

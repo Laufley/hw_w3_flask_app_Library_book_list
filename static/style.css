@@ -1,0 +1,98 @@
+
+body {
+        font-family: 'Lobster', sans-serif;
+        background-color: rgb(255, 253, 157);
+        margin: 0rem;
+        text-indent: 2rem;
+        padding:0;
+
+}
+
+body > header > a {
+    font-style: none;
+    margin: 0;
+}
+
+
+#book_collection {
+    font-family: monospace;
+}
+
+#single {
+    font-family: 'Dancing Script', sans-serif;
+} 
+
+#add_to_favourites{
+    display: flex;
+    margin-left: 0rem;
+    border-radius: 5rem;
+    background-color: #a0e6d4;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 10rem;
+}
+
+#delete_button {
+    display: flex;
+    margin-left: 0rem;
+    border-radius: 5rem;
+    background-color: #ed8fdb;
+    border: none;
+    color: white;
+    width: 10rem;
+}
+
+#navigation > ul {
+    font-family: 'Lobster', sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-left: 40%;
+    margin-right: 10%;
+    margin-top: -26px;
+    
+}
+
+#header{
+    grid-area: header;
+    background-color: rgb(255, 167, 94);
+    height: 5.3rem;
+}
+
+#main{
+    grid-area: main;
+}
+
+#add-a-book{
+    background-color: rgb(255, 167, 94);
+    width: 100%;
+    padding-bottom:1rem;
+    grid-area: addition;
+}
+
+#new {
+    font-family: 'Dancing Script', sans-serif;
+}
+
+
+#footer {
+    width:100%;
+    bottom:0rem;
+    position: fixed 100rem 50rem 0rem 50rem;
+    text-align: center;
+    background-color: #9e9e9e;
+    grid-area: footer;
+    max-height: 2rem;
+    /* footer does not stick to bottom of page in neither of the pgs  */
+}
+
+#grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'main main'
+    'footer footer'; 
+}
+
+

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="secondary_pages">
+    <h2> Your thoughts here</h2>
+    <form action="/home/thoughts" method="post">
+        <p>
+        <label for="user_thoughts">Save here your thoughts on any book you have read</label>
+        </p>
+        <textarea id="user_thoughts"></textarea>
+        <input type="submit" value="submit">
+
+    </form>
+{% endblock %}

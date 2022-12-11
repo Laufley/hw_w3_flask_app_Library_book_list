@@ -1,0 +1,26 @@
+Modelling a Flask app to manage lists of books in a Library.
+
+>Functionalities:
+
+BASIC
+1. List all Books in main page.
+2. Click button to add a new book to the list.
+3. Click button to delete this book from the list.
+4. Click on book from list to open the book in a new tab (so that user can open several books on different tabs and compare them).
+
+EXTENSIONS AND ADVANCED EXTENSTIONS
+
+5. Added visual elements for _available_ and conditions on books that user can interact with.
+6. CSS style.
+
+PERSONAL ADDITIONS
+7. Added several HTML templates for unique pages, extending content from base.html using blocks.
+7. Navigate the <Nav> elements from the <Nav> menu with simple tabulations.
+8. Clicking on any <Nav> element will close the current page and open a new one (vs on tabs, to not overpopulate the browser).
+4. Unique <Nav> pages:
+   4.1 - Favourites: User can click a button from homepage and save the book into a list on Favourites page.
+   4.2 - Sticker_notes : User can write personal comments about any book read in case user wants to remember the emotions or thoughts related.
+   4.3 - Book News! : Feeds the user with valuable information regarding books, the community or the page.
+   4.4 - What the duck community says: where (fake)_users can gather and post comments to interact.
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Zen+Dots&display=swap');
+        </style>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Zen+Dots&display=swap');
+        </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{ title }}</title>
+</head>
+<body id="grid-container">
+    <header id = "header">
+        <h1> <a href="/home" >Books for ducks </a> </h1>
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a href="/home/favourites"> Your favourites</a>
+                </li>
+                <li>
+                    <a href="/home/thoughts"> Your thoughts</a>
+                </li>
+                <li>
+                    <a href="/home/news"> Book news!</a>
+                </li>
+                <li> 
+                    <a href="/home/community"> what the duck community says...</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main">{% block content %}{% endblock %} </div>
+    <div id="footer">©Books For Ducks.org </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="info_book">
+
+    <h2> Looking for this?:</h2>
+            <p>TITLE: {{item.title}} </p>
+            <p>AUTHOR: {{item.author}} </p>
+            <p>GENRE: {{item.genre}}</p>
+        
+            {% if item.available %}
+            <p>STATUS: Available</p> 
+            {% else %}
+            <p>STATUS: Checked out</p> 
+            {% endif %}
+
+                <form id="checks" action="/home/{{Book_ID}}" method="POST">
+                    <label for="available_id">Available</label>
+                    <input type="radio" name="box" value="listed" id="available_id" check>
+                    <label for="checked_out_id">Checked_out</label>
+                    <input type="radio" name="box" value="checked" id="checked_out_id">
+                    <input type="submit" value="Submit">
+                </form>
+{% endblock %}
+
+
+

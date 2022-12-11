@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="shelves">
+        <h2>Current collection</h2>
+            <ol> 
+            {% for book in shelves %}
+            <li>
+                <a href="/home/{{loop.index0}}" target="_blank" id="book_collection"> {{book.title}}</a>
+                    <form class="deleting_book" action="/home/delete/{{loop.index0}}" method="POST">
+                    <input id="delete_button" type="submit" value="delete">
+                    </form> 
+                    <form class="save_to_fav" action="/home/favourites/{{loop.index0}}" method="POST">
+                    <input id="add_to_favourites" type="submit" value="Save to favourites">
+                    </form> 
+            </li>
+            {% endfor %}
+            </ol>
+        
+    </div>
+
+    <div id="add-a-book">
+        <h2>Add a book to the list</h2>
+        <form id="new" action="/home" method="post">
+            <label for="input_book_title">Book title</label>
+            <input type="text" name="title_new_book" id="input_book_title">
+            <label for="input_book_author">Author</label>
+            <input type="text" name="author_new_book" id="input_book_author">
+            <label for="input_book_genre">Genre</label>
+            <input type="text" name="genre_new_book" id="input_book_genre">
+            <input type="submit" value="Add book">
+        </form>
+    </div>
+{% endblock %}
+    
+
